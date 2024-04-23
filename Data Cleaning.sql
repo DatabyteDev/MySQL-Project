@@ -144,8 +144,18 @@ modify column `date` Date;
 
 
 select *
-from world_layoffs.layoffs_staging2;
+from world_layoffs.layoffs_staging2
+where total_laid_off is null
+and percentage_laid_off is null;
 
+Delete
+from world_layoffs.layoffs_staging2
+where total_laid_off is null
+and percentage_laid_off is null;
+
+
+select *
+from world_layoffs.layoffs_staging2;
 
 
 update world_layoffs.layoffs_staging2
@@ -153,8 +163,8 @@ set industry = null
 where industry = '';
 
 select t1.industry, t2.industry
-from layoffs_staging2 t1
-join layoffs_staging2 t2
+from world_layoffs.layoffs_staging2 t1
+join world_layoffs.layoffs_staging2 t2
 	on t1.company = t2.company
 where t1.industry is null
 and t2.industry is not null
@@ -172,18 +182,6 @@ and t2.industry is not null
 select *
 from world_layoffs.layoffs_staging2
 ;
-
-
-
-select *
-from world_layoffs.layoffs_staging2
-where total_laid_off is null
-and percentage_laid_off is null;
-
-Delete
-from world_layoffs.layoffs_staging2
-where total_laid_off is null
-and percentage_laid_off is null;
 
 
 Alter Table layoffs_staging2
