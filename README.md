@@ -1,1 +1,1 @@
-This project focuses on conducting data cleaning and exploratory data analysis (EDA) of layoffs data spanning from the onset of the COVID-19 pandemic to the present. The dataset was collected from [source], and it includes information on affected industries, companies, locations... .
+This project focuses on conducting data cleaning and exploratory data analysis (EDA) of layoffs data spanning from the onset of the COVID-19 pandemic to the present. The dataset was collected from Kaggle, and it includes information on affected industries, companies, locations... .
