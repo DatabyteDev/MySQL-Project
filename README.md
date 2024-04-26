@@ -1,1 +1,1 @@
-This project aims to analyze layoffs that occurred from when COVID-19 was declared as a pandemic to present (20 April 2024) using MySQL. The data includes information on affected industries, companies, locations... .
+This project focuses on conducting data cleaning and exploratory data analysis (EDA) of layoffs data spanning from the onset of the COVID-19 pandemic to the present. The dataset was collected from [source], and it includes information on affected industries, companies, locations... .
